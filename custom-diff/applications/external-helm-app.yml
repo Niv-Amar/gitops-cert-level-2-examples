@@ -29,7 +29,7 @@ spec:
     - .metadata.annotations.creation
   
   ignoreDifferences:
-  - group: apps
+  - group: ""
     kind: Secret
     name: example-secret
     namespace: example02
