@@ -28,7 +28,7 @@ spec:
     name: example-secret
     namespace: example02
     jqPathExpressions:
-    - .data.my-password
+    - .data
   #- group: apps
    # kind: Deployment
     #jqPathExpressions:
