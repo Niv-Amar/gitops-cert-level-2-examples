@@ -28,11 +28,10 @@ spec:
     jsonPointers:
     - /data
     - /stringData
-      
-  #- group: apps
-   # kind: Deployment
-    #jqPathExpressions:
-    #- .metadata.annotations.creation
+  - group: apps
+    kind: Deployment
+    jqPathExpressions:
+    - .metadata.annotations.creation
    
   
  
