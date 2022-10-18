@@ -23,12 +23,11 @@ spec:
       - CreateNamespace=true  
   
   ignoreDifferences:
-  - group: apps
+  - group: "*"
     kind: Secret
-    name: example-secret
-    namespace: example02
-    jqPathExpressions:
-    - .data.my-password
+    jsonPointers:
+    - /data
+    - /stringData
   - group: apps
     kind: Deployment
     jqPathExpressions:
