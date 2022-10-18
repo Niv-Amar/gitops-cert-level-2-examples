@@ -29,11 +29,12 @@ spec:
     namespace: example02
     jsonPointers:
     - /data
-   
-  ignoreDifferences:
   - group: apps
     kind: Deployment
     jqPathExpressions:
     - .metadata.annotations.creation
+   
+  
+ 
   
   
