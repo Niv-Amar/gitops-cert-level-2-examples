@@ -26,4 +26,9 @@ spec:
   - group: apps
     kind: Deployment
     jqPathExpressions:
-    - .metadata.annotations.creation 
+    - .metadata.annotations.creation
+  ignoreDifferences:
+  - group: ""
+    kind: Secret
+    jsonPointers:
+    - /data
