@@ -28,7 +28,7 @@ spec:
     jqPathExpressions:
     - .metadata.annotations.creation
   ignoreDifferences:
-  - group: ""
+  - group: apps
     kind: Secret
     jsonPointers:
     - /data
