@@ -31,5 +31,7 @@ spec:
   ignoreDifferences:
   - group: apps
     kind: Secret
+    name: example-secret
+    namespace: example02
     jsonPointers:
-    - /data/*
+    - /data
