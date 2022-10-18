@@ -30,6 +30,10 @@ spec:
     jsonPointers:
     - /data
    
-  
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jqPathExpressions:
+    - .metadata.annotations.creation
   
   
