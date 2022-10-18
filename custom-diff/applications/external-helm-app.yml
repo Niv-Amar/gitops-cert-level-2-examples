@@ -27,8 +27,8 @@ spec:
     kind: Secret
     name: example-secret
     namespace: example02
-    jsonPointers:
-    - /data
+    jqPathExpressions:
+    - .data.my-password
   - group: apps
     kind: Deployment
     jqPathExpressions:
