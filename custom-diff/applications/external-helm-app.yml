@@ -29,10 +29,10 @@ spec:
     namespace: example02
     jqPathExpressions:
     - .data.my-password
-  - group: apps
-    kind: Deployment
-    jqPathExpressions:
-    - .metadata.annotations.creation
+  #- group: apps
+   # kind: Deployment
+    #jqPathExpressions:
+    #- .metadata.annotations.creation
    
   
  
